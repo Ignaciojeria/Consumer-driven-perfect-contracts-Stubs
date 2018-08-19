@@ -1,11 +1,11 @@
 {
-  "id" : "b88dbf8b-438b-4b66-afcb-9b2eb7b4df2c",
+  "id" : "6c18b91f-4acb-4073-b92c-b9a8bbc9bf5f",
   "request" : {
     "url" : "/producer",
     "method" : "POST",
     "headers" : {
       "Content-Type" : {
-        "matches" : "application/json;charset=UTF-8.*"
+        "matches" : "application/json.*"
       }
     },
     "bodyPatterns" : [ {
@@ -18,9 +18,9 @@
     "status" : 201,
     "body" : "{\"name\":\"{{{jsonpath this 'name'}}}\",\"description\":\"{{{jsonpath this 'description'}}}\"}",
     "headers" : {
-      "Content-Type" : "application/json;charset=UTF-8"
+      "Content-Type" : "application/json"
     },
     "transformers" : [ "response-template" ]
   },
-  "uuid" : "b88dbf8b-438b-4b66-afcb-9b2eb7b4df2c"
+  "uuid" : "6c18b91f-4acb-4073-b92c-b9a8bbc9bf5f"
 }
